@@ -1,66 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpine Minecraft Client</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #1f2937, #4b5563);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-        }
-        button {
-            background: #1d6aff;
-            border: none;
-            color: #fff;
-            padding: 10px 20px;
-            margin-top: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #1555cc;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.8em;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Alpine</h1>
-        <p>Enhanced Minecraft experience for any server!</p>
-    </header>
-    <div class="container">
-        <h2>Connect to Your Favorite Server</h2>
-        <form action="#" method="post">
-            <label for="server">Enter Server Address:</label><br>
-            <input type="text" id="server" name="server" placeholder="e.g., play.alpine.com" required style="padding: 8px; width: 100%; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;">
-            <br>
-            <button type="submit">Connect</button>
-        </form>
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.bunny.net/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AxolotlClient</title>
+  </head>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="https://axolotlclient.com"
+        ><img src="images/icon.png" alt="Logo"
+      /></a>
+      <a class="text" href="https://modrinth.com/mod/axolotlclient">Modrinth</a>
+      <a class="text" href="https://github.com/AxolotlClient/">GitHub</a>
+      <a class="text" href="https://discord.gg/WyMjeX3vka">Discord</a>
     </div>
-    <footer>
-        <p>&copy; 2024 Alpine Client | Powered by Minecraft</p>
-    </footer>
-</body>
+    <div class="navbar-right">
+      <img src="images/moon.svg" alt="" id="switcher" />
+    </div>
+  </div>
+
+  <body>
+    <div class="main">
+      <div class="buttons">
+        <img src="images/icon.png" alt="AxolotlClient logo" />
+        <h1>AxolotlClient</h1>
+        <h3>A Free & Open-source Minecraft Client</h3>
+        <a href="https://modrinth.com/mod/axolotlclient/versions#all-versions"
+          ><button class="tooltip">Download</button></a
+        >
+        <a href="https://modrinth.com/mod/axolotlclient/gallery"
+          ><button>Screenshots</button></a
+        >
+      </div>
+    </div>
+
+    <div class="next__slide">
+      <h2>Why <em>AxolotlClient?</em></h2>
+      <div class="reasons">
+        <div class="reason">
+          <img
+            class="icon"
+            src="images/github.svg"
+            width="70px"
+            height="70px"
+          />
+          <h2>Open-Source</h2>
+          <p>
+            The client is completely open-source for maximum<br />
+            user comfort. All code is licensed under Free software licenses to
+            allow user modifications.
+          </p>
+        </div>
+        <div class="reason">
+          <img src="images/modrinth.svg" height="70px" color="#00aa00" />
+          <h2>Customizable</h2>
+          <p>
+            You can add your own mods to create <b>your own</b> Client.
+            <br />
+            Create your own experience by downloading AxolotlClient now!
+          </p>
+        </div>
+        <div class="reason">
+          <img src="images/quilt.svg" height="70px" />
+          <h2>
+            Built on modern<br />
+            Mod Loaders
+          </h2>
+          <p>
+            We use the most modern Loaders to get updates as soon as possible.
+            This also speeds up<br />
+            load times and facilitates developement.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <h5 class="warning">
+        NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH
+        MOJANG.
+      </h5>
+              <h5 class="warning">
+      Website is a Fork of Axolotl Client Website, Thanks for the Template.
+      </h5>
+      <p>
+        <a href="https://axolotlclient.com/terms">Terms</a>
+      </p>
+    </div>
+  </body>
 </html>
