@@ -1,1 +1,1 @@
-# alpinemc.github.io
+The official AlpineMC Website.
