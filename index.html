@@ -1,13 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Minecraft Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1f2937, #4b5563);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        button {
+            background: #1d6aff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1555cc;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Alpine</h1>
+        <p>Enhanced Minecraft experience for any server!</p>
+    </header>
+    <div class="container">
+        <h2>Connect to Your Favorite Server</h2>
+        <form action="#" method="post">
+            <label for="server">Enter Server Address:</label><br>
+            <input type="text" id="server" name="server" placeholder="e.g., play.alpine.com" required style="padding: 8px; width: 100%; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <br>
+            <button type="submit">Connect</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Alpine Client | Powered by Minecraft</p>
+    </footer>
+</body>
 </html>
